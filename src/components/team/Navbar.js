@@ -71,6 +71,8 @@ function NavBar(props) {
           <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
+
+          {/* home btn */}
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
@@ -81,6 +83,7 @@ function NavBar(props) {
               </Nav.Link>
             </Nav.Item>
 
+                {/* About for us btn */}
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -94,6 +97,8 @@ function NavBar(props) {
               </Nav.Link>
             </Nav.Item>
 
+
+                {/* our team projects btn */}
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -108,6 +113,7 @@ function NavBar(props) {
                 }
               </Nav.Link>
             </Nav.Item>
+
             {/* 
             <Nav.Item>
               <Nav.Link
@@ -118,10 +124,12 @@ function NavBar(props) {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item> */}
+
+            {/* our team btn */}
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/about"
+                to="/member"
                 onClick={() => updateExpanded(false)}
               >
                 <ImClubs style={{ marginBottom: "2px" }} />
@@ -131,6 +139,7 @@ function NavBar(props) {
               </Nav.Link>
             </Nav.Item>
 
+                {/* samir git link */}
             <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/pioneer82/samir-pioneer"
@@ -141,6 +150,8 @@ function NavBar(props) {
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
             </Nav.Item>
+
+            {/* language change btn */}
             <Nav.Item className="fork-btn">
               <Button
                 className="fork-btn-inner"
